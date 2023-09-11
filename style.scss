@@ -120,8 +120,8 @@ body
     display: none;
     border-radius: 5px;
     width:400px;
-    height: calc(36rem + 20px);
-    > *:not(:last-child)
+    height: calc(35rem + 20px);
+    > *:not(:last-child,:nth-child(2))
     {
         padding: 20px 30px;
     }
@@ -134,11 +134,15 @@ body
     text-transform: uppercase;
     font-weight: bold;
 }
-.quizQuestion h3
+.quizQuestion 
 {
+    padding: 20px 30px 0px;
+    h3
+    {
     inline-size: 100%;
     overflow-wrap: break-word;
     text-align: center;
+    }
 }
 .quizAnswers
 {
@@ -279,7 +283,7 @@ body
     .quizBox
     {
         width: calc(100% - 10vw);
-        height: calc(36rem);
+        height: calc(35rem);
     }
     .quizBtns
     {
