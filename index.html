@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start button -->
+   <button id="startBtn">Start Quiz</button>
+
+   <!-- Rules box -->
+   <div class="rulesBox">
+    <div class="rulesTitle">
+        <span>Few rules of quiz</span>
+    </div>
+    <div class="rulesList">
+        <div class="info">1. You will have only <span>15 seconds</span> to answer questions.</div>
+        <div class="info">2. You <span>can't</span> reselect your answer.</div>
+        <div class="info">3. There is only <span>one</span> correct answer on each question.</div>
+        <div class="info">4. Once you click <span>"Continue"</span> you can't leave quiz.</div>
+    </div>
+    <div class="rulesBtns">
+        <button id="rulesQuit">Leave Quiz</button>
+        <button id="next">Continue</button>
+    </div>
+   </div>
+   
+   <!--Quiz box-->
+   <div class="quizBox">
+        <div class="quizTitle">
+            <div class="question">Question: <span>1</span> / 5</div>
+            <div class="timer">Time left: <span></span> s</div>
+        </div>
+        <div class="quizQuestion">
+            <h3></h3>
+        </div>
+        <div class="quizAnswers">
+            <div class="answer a"></div>
+            <div class="answer b"></div>
+            <div class="answer c"></div>
+            <div class="answer d"></div>
+        </div>
+        <div class="quizBtns">
+            <button>Next Question</button>
+        </div>
+   </div>
+
+   <!--Finish box-->
+   <div class="finishBox">
+        <div class="crown"><img src="crown.png" alt=""></div> <!-- Icon made by Freepik from www.flaticon.com -->
+        <div class="msg">
+            <h1>Congratulations!</h1>
+            <p>You finished quiz and earned <br><span></span> of 5 points</p>
+        </div>
+        <div class="finishBtns">
+            <button id="restart">Restart</button>
+            <button id="finishQuit">Leave</button>
+        </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
