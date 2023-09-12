@@ -244,7 +244,7 @@ body {
   border: 1px solid #6453cd;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   body {
     overflow: hidden;
   }

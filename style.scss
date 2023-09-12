@@ -267,7 +267,7 @@ body
     }
 }
 
-@media screen and (max-width: $breakpoint) {
+@media screen and (width <= $breakpoint) {
     body
     {
         overflow: hidden;
